@@ -46,7 +46,7 @@ public class EmployeeService {
 //            list.add(map);
 //        }
 //
-//        return list;
+//        return list; // we can also do the below things like that , using for each loop manually but, we let mapper do the job.
 
 
         return employeeRepo
