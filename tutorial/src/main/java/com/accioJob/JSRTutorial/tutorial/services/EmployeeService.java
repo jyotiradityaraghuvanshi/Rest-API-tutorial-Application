@@ -52,7 +52,7 @@ public class EmployeeService {
         return employeeRepo
                 .findAll()
                 .stream()
-                .map(employeeEntity -> modelMapper.map(employeeEntity , EmployeeDto.class))
+                .map(employeeEntity -> modelMapper.map(employeeEntity , EmployeeDto.class))  //here we can use foreach function of stream instead of map
                 .collect(Collectors.toList());
     }
 
